@@ -1,6 +1,8 @@
 <?php
 // phpcs:ignore
-class ApiTester extends \Codeception\Actor
+use Codeception\Actor;
+
+class ApiTester extends Actor
 {
     use _generated\ApiTesterActions;
 }

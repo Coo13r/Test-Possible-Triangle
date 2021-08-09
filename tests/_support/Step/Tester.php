@@ -6,16 +6,13 @@ use ApiTester;
 
 class Tester extends ApiTester
 {
-    /** @var string  */
-    public const URL = '/tester';
-
     /**
-     * @param array $params
+     * @param array $sides
      *
      * @return void
      */
-    public function getHi(array $params = []): void
+    public function sendTriangleSides(array $sides = []): void
     {
-        $this->sendGet(self::URL . '/hi', $params);
+        $this->sendGet('/triangle/possible',  $sides);
     }
 }
